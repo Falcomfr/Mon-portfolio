@@ -1,0 +1,203 @@
+/*** Responsive ***/
+
+@media only screen and (max-width: 1250px) {
+    #portfolio article {
+        -ms-grid-columns: 27% 27% 27%;
+            grid-template-columns: 27% 27% 27%;
+    }
+    .imgDeco {
+        margin: auto;
+        height: 80px;
+    }
+    #competences article ul {
+        width: 22%;
+    }
+    #formation ul {
+        width: 50%;
+    }
+    header h1 {
+        font-size: 6vmax;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #portfolio article {
+        -ms-grid-columns: 35% 35%;
+            grid-template-columns: 35% 35%;
+    }
+    #competences article ul {
+        width: 27%;
+    }
+    .imgDeco {
+        background-size: 100%;
+        background-attachment: initial;
+    }
+    #contact form {
+        -ms-grid-columns: 35% 35%;
+            grid-template-columns: 35% 35%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 5.3vmax;
+    }
+    nav {
+        border: none;
+    }
+    nav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: none;
+    }
+    nav li {
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    nav label {
+        display: block;
+        font-size: 30px;
+        background-color: #20203c;
+        width: 1.5em;
+        font-weight: normal;
+        height: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid #fff;
+        border-bottom: 0;
+        text-align: center;
+    }
+
+    nav #link:checked~ul {
+        display: block;
+    }
+
+    #main,
+    #competences,
+    #portfolio,
+    #formations,
+    #contact,
+    #competencesLink,
+    #portfolioLink,
+    #formationsLink,
+    #contactLink {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0.6em;
+    }
+    #main section {
+        padding-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    #main p {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        padding: 1em 1em 0 1em;
+        margin: 0;
+    }
+    #main img {
+        margin: 0 auto 5px auto;
+        width: 100%;
+    }
+    main a {
+        font-size: 18px;
+        margin: 4% 17% 0 17%;
+    }
+    #competences article {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    #competences article ul {
+        width: 80%;
+        margin: 5px;
+        padding: 20px;
+        padding-top:0px;
+    }
+    #portfolio article {
+        display: block;
+        padding-top: 0;
+    }
+    #portfolio img {
+        margin: 0.3em 0 0.3em 0;
+    }
+
+    .modal-window img {
+        display: none;
+    }
+    .modal-window p{
+        display: block;
+        background-color: #dadada;
+        border: 1px solid #fff;
+        padding: 20px;
+    }
+
+    #portfolio figcaption {
+        display: none;
+    }
+    #portfolio figure {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right:0;
+        min-height: 160px;
+    }
+    #portfolio figure:hover a img, #portfolio figure:active a img, #portfolio figure:focus a img {
+        -webkit-animation: none;
+                animation: none;
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+    }
+    #formations article {
+        margin-top: 0;
+    }
+
+    #formations ul {
+        padding: 0.5% 0 0.5% 0%;
+        width: 80%;
+        min-width: 0;
+    }
+    main a:hover, main a:focus, main a:active {
+        font-size: 20.5px;
+    }
+    #contact form {
+        -ms-grid-columns: 80%;
+            grid-template-columns: 80%;
+        padding-top: 0;
+    }
+    #contact fieldset {
+        padding-top: 0;
+    }
+    #contact span:nth-of-type(1), input:nth-of-type(1), span:nth-of-type(2), input:nth-of-type(2), span:nth-of-type(3), input:nth-of-type(3) {
+        grid-column: span 3;
+    }
+    #contact span:nth-of-type(1) {
+        grid-row: 1;
+    }
+    #contact input:nth-of-type(1) {
+        grid-row: 2;
+    }
+    #contact span:nth-of-type(2) {
+        grid-row: 3;
+    }
+    #contact input:nth-of-type(2) {
+        grid-row: 4;
+    }
+    #contact span:nth-of-type(3) {
+        grid-row: 5;
+    }
+    #contact input:nth-of-type(3) {
+        grid-row: 6;
+    }
+}
